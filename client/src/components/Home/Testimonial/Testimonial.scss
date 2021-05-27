@@ -1,0 +1,43 @@
+.testimonial-area {
+   text-align: center;
+   display: flex;
+
+   .testimonial-card-left,
+   .testimonial-card-middle,
+   .testimonial-card-right {
+      border: 2px solid lightblue;
+      border-radius: 1rem;
+      margin: 1rem;
+      padding: 2rem;
+      cursor: pointer;
+      background-image: linear-gradient(45deg, orange, orangered);
+
+      & > div {
+         background-color: #fff;
+         clip-path: circle(130px at center 0);
+
+         img {
+            width: 5rem;
+            margin: 2rem;
+         }
+      }
+
+      h4 {
+         text-transform: uppercase;
+      }
+
+      &:hover {
+         border: 2px solid orange;
+         background-image: linear-gradient(45deg, orangered, orange);
+         color: #fff;
+         transition: all 2s;
+
+         > div {
+            img {
+               transition: all 2s;
+               transform: scale(1.5);
+            }
+         }
+      }
+   }
+}

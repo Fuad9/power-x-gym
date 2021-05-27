@@ -1,0 +1,40 @@
+@mixin border-radius {
+    border-radius: 1rem;
+}
+
+.footer {
+    background-image: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://i.ibb.co/W5kW54Z/sven-mieke-Lx-GDv7-VA9-M-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgba(255, 255, 255, 0.563);
+    border: 1px solid orangered;
+    @include border-radius();
+    padding: 4rem 2rem;
+
+    > div {
+        h4 {
+            text-transform: capitalize;
+        }
+
+        ul > li {
+            list-style: none;
+        }
+
+        form {
+            text-align: right;
+
+            input {
+                border: 1px solid orange;
+                @include border-radius();
+                margin: 1rem 0;
+                padding: 1rem;
+            }
+        }
+    }
+}

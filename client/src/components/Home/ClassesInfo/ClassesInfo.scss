@@ -1,0 +1,38 @@
+.trainings {
+   > div {
+      position: relative;
+      cursor: pointer;
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+
+      &:hover {
+         img {
+            filter: blur(4px);
+            -webkit-filter: blur(4px);
+         }
+      }
+
+      > div {
+         background-image: linear-gradient(45deg, #ffa500, #bf00ff75);
+         margin-top: -150px;
+         padding: 1rem;
+         position: absolute;
+
+         h5 {
+            text-transform: capitalize;
+         }
+
+         &:hover {
+            background-image: linear-gradient(45deg, #bf00ff75, #ffa500);
+
+            h5 {
+               transition: all 1s;
+               font-size: 2rem;
+            }
+         }
+      }
+   }
+}
