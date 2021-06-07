@@ -1,0 +1,20 @@
+.skeleton-loading {
+  > div {
+    animation-name: myanime;
+    animation-duration: 5s;
+    animation-direction: linear infinite;
+    --webkit-animation-name: myanime;
+    --webkit-animation-duration: 5s;
+    --webkit-animation-direction: linear infinite;
+  }
+}
+
+@keyframes myanime {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

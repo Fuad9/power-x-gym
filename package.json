@@ -1,24 +1,25 @@
 {
   "name": "power-x-gym",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "node src/app.js",
+    "server": "nodemon src/app.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": "https://github.com/Fuad9/power-x-gym.git",
+  "author": "devFuad <63036027+Fuad9@users.noreply.github.com>",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongodb": "^3.6.8"
+    "mongoose": "^5.12.12",
+    "react-sound": "^1.2.0"
   },
   "devDependencies": {
+    "@types/react-sound": "^1.2.2",
     "concurrently": "^6.2.0",
     "nodemon": "^2.0.7"
   }

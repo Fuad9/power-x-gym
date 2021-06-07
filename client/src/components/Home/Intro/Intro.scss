@@ -1,17 +1,13 @@
 .intro-container {
-   color: rgba(255, 255, 255, 0.666);
-   padding: 2rem;
+  color: rgba(255, 255, 255, 0.666);
+  padding: 2rem;
 
-   &::after {
-      content: " ";
-      position: absolute;
-      top: 0;
-      width: 100%;
-      right: 0;
-      /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../../../images//headerMain.jpg");
-       background-size: cover;
-       background-repeat: no-repeat;
-       background-position: center center; */
-      z-index: -5;
-   }
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: -5;
+  }
 }
