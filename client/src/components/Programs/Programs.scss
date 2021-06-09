@@ -1,15 +1,15 @@
-.inner-container-one,
-.inner-container-two,
-.inner-container-three,
-.inner-container-four,
-.inner-container-five,
-.inner-container-six {
+.inner-container-one:nth-child(1),
+.inner-container-one:nth-child(2),
+.inner-container-one:nth-child(3),
+.inner-container-two:nth-child(1),
+.inner-container-two:nth-child(2),
+.inner-container-two:nth-child(3) {
   position: relative;
 
   img {
     width: 100%;
     height: 100%;
-    margin: 1rem;
+    margin: 1rem 0;
     display: block;
   }
 
@@ -17,9 +17,9 @@
     opacity: 0.8;
 
     &:before {
-      top: 50%;
+      top: 80%;
       transition: all 1s;
-      transform: rotate(360deg) scale(1.4);
+      transform: rotate(360deg) scale(1.3);
     }
   }
 
@@ -31,7 +31,7 @@
     line-height: 5rem;
     position: absolute;
     bottom: -10%;
-    left: 16%;
+    left: 13%;
     height: 15%;
     width: 75%;
     background: orange;
@@ -39,37 +39,37 @@
   }
 }
 
-.inner-container-one:before {
+.inner-container-one:nth-child(1):before {
   content: "weight training";
 }
 
-.inner-container-two:before {
+.inner-container-one:nth-child(2):before {
   content: "fartlek training";
 }
 
-.inner-container-three:before {
+.inner-container-one:nth-child(3):before {
   content: "circuit training";
 }
 
-.inner-container-four:before {
+.inner-container-two:nth-child(1):before {
   content: "intervel training";
 }
 
-.inner-container-five:before {
+.inner-container-two:nth-child(2):before {
   content: "plyometric training";
 }
 
-.inner-container-six:before {
+.inner-container-two:nth-child(3):before {
   content: "flexibility training";
 }
 
 @media screen and (max-width: 647px) {
-  .inner-container-one,
-  .inner-container-two,
-  .inner-container-three,
-  .inner-container-four,
-  .inner-container-five,
-  .inner-container-six {
+  .inner-container-one:nth-child(1),
+  .inner-container-one:nth-child(2),
+  .inner-container-one:nth-child(3),
+  .inner-container-two:nth-child(1),
+  .inner-container-two:nth-child(2),
+  .inner-container-two:nth-child(3) {
     & {
       padding: 0.8rem 0;
     }
@@ -88,12 +88,12 @@
 }
 
 @media only screen and (max-device-width: 768px) {
-  .inner-container-one,
-  .inner-container-two,
-  .inner-container-three,
-  .inner-container-four,
-  .inner-container-five,
-  .inner-container-six {
+  .inner-container-one:nth-child(1),
+  .inner-container-one:nth-child(2),
+  .inner-container-one:nth-child(3),
+  .inner-container-two:nth-child(1),
+  .inner-container-two:nth-child(2),
+  .inner-container-two:nth-child(3) {
     &:before {
       font-size: 0.3rem;
       line-height: 2.5rem;
@@ -102,12 +102,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .inner-container-one,
-  .inner-container-two,
-  .inner-container-three,
-  .inner-container-four,
-  .inner-container-five,
-  .inner-container-six {
+  .inner-container-one:nth-child(1),
+  .inner-container-one:nth-child(2),
+  .inner-container-one:nth-child(3),
+  .inner-container-two:nth-child(1),
+  .inner-container-two:nth-child(2),
+  .inner-container-two:nth-child(3) {
     &:before {
       font-size: 0.8rem !important;
       line-height: 3rem;
@@ -116,12 +116,12 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .inner-container-one,
-  .inner-container-two,
-  .inner-container-three,
-  .inner-container-four,
-  .inner-container-five,
-  .inner-container-six {
+  .inner-container-one:nth-child(1),
+  .inner-container-one:nth-child(2),
+  .inner-container-one:nth-child(3),
+  .inner-container-two:nth-child(1),
+  .inner-container-two:nth-child(2),
+  .inner-container-two:nth-child(3) {
     &:before {
       font-size: 1rem;
       // line-height: 3rem;

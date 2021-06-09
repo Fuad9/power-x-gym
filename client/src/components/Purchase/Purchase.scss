@@ -1,88 +1,97 @@
 @mixin text-orange {
-    color: orange;
+  color: orange;
 }
 
 .purchase-plans {
-    > div {
-        text-align: center;
-        color: #fff;
-        border: 1px solid lightblue;
-        border-radius: 1rem;
-        margin: 1.5rem;
-        padding: 1rem;
-        cursor: pointer;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 
-        h1 {
-            @include text-orange();
-        }
+  > div {
+    text-align: center;
+    color: #fff;
+    border: 5px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
 
-        h3 {
-            text-transform: uppercase;
-        }
-
-        h4 {
-            text-transform: capitalize;
-            @include text-orange();
-        }
-
-        h5 {
-            border-bottom: 5px solid orange;
-            display: inline-block;
-            width: 50%;
-            margin: auto;
-        }
-
-        h6 {
-            text-align: left;
-            margin-top: 1rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        button {
-            visibility: hidden;
-        }
-
-        &:hover {
-            border: 5px solid orange;
-
-            button {
-                visibility: visible;
-            }
-        }
+    h1 {
+      @include text-orange();
     }
 
-    .card-one {
-        background-image: linear-gradient(
-                45deg,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-            ),
-            url("https://i.ibb.co/jfxLnGv/card-One-Bg.jpg");
+    h3 {
+      text-transform: uppercase;
     }
 
-    .card-two {
-        background-image: linear-gradient(
-                45deg,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-            ),
-            url("https://i.ibb.co/XJcmkcg/scott-webb-22437-unsplash.png");
+    h4 {
+      text-transform: capitalize;
+      @include text-orange();
     }
 
-    .card-three {
-        background-image: linear-gradient(
-                45deg,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-            ),
-            url("https://i.ibb.co/9n48GdY/card-Three-Bg.jpg");
+    h5 {
+      border-bottom: 5px solid orange;
+      display: inline-block;
+      width: 50%;
+      margin: auto;
     }
 
-    .card-one,
-    .card-two,
-    .card-three {
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    h6 {
+      text-align: left;
+      margin-top: 1rem;
+      color: rgba(255, 255, 255, 0.8);
     }
+
+    button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: transparent;
+      border: 2px solid blue !important;
+      color: #fff;
+    }
+
+    &:hover {
+      border: 5px solid orange;
+
+      button {
+        background: linear-gradient(45deg, orange, orangered);
+        border: transparent !important;
+        transition: all 3s ease-in-out !important;
+      }
+    }
+  }
+
+  > div:nth-child(1) {
+    background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://i.ibb.co/jfxLnGv/card-One-Bg.jpg");
+  }
+
+  > div:nth-child(2) {
+    background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://i.ibb.co/XJcmkcg/scott-webb-22437-unsplash.png");
+  }
+
+  > div:nth-child(3) {
+    background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://i.ibb.co/9n48GdY/card-Three-Bg.jpg");
+  }
+
+  > div:nth-child(1),
+  > div:nth-child(2),
+  > div:nth-child(3) {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

@@ -27,7 +27,7 @@ const Purchase: React.FC = () => {
           ratione itaque quam cumque tempore
         </p>
         <div className="split purchase-plans">
-          <div className="card-one">
+          <div>
             <h4>basic</h4>
             <h3>kickstart innermost bundle</h3>
             <CountUp start={0} end={90} delay={0} duration={9.35} decimals={0}>
@@ -54,12 +54,11 @@ const Purchase: React.FC = () => {
             </h6>
 
             <Link to="/registration">
-              <button>
-                <PlaySound>purchase</PlaySound>
-              </button>
+              <PlaySound>purchase</PlaySound>
             </Link>
           </div>
-          <div className="card-two">
+
+          <div>
             <h4>standard</h4>
             <h3>sports performance 360 innermost bundle</h3>
             <CountUp start={0} end={120} delay={0} duration={9.35} decimals={0}>
@@ -104,12 +103,11 @@ const Purchase: React.FC = () => {
             </h6>
 
             <Link to="/registration">
-              <button>
-                <PlaySound>purchase</PlaySound>
-              </button>
+              <PlaySound>purchase</PlaySound>
             </Link>
           </div>
-          <div className="card-three">
+
+          <div>
             <h4>Premium</h4>
             <h3>sports performance 360 myzone bundle</h3>
             <CountUp start={0} end={140} delay={0} duration={9.35} decimals={0}>
@@ -153,9 +151,7 @@ const Purchase: React.FC = () => {
             </h6>
 
             <Link to="/registration">
-              <button>
-                <PlaySound>purchase</PlaySound>
-              </button>
+              <PlaySound>purchase</PlaySound>
             </Link>
           </div>
         </div>

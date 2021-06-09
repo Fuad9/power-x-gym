@@ -79,13 +79,13 @@ const ProgramsDetails: React.FC = () => {
             </h1>
             <div className="row">
               <div>
-                <div className="menu">
+                <div>
                   <h3>monday</h3>
                   <h4>8am - 9am</h4>
                 </div>
               </div>
               <div>
-                <div className="menu">
+                <div>
                   <h3>tuesday</h3>
                   <h4>10am - 11am</h4>
                 </div>
@@ -93,27 +93,27 @@ const ProgramsDetails: React.FC = () => {
             </div>
             <div className="row">
               <div>
-                <div className="menu">
+                <div>
                   <h3>wednesday</h3>
                   <h4>7am - 8am</h4>
                 </div>
               </div>
               <div>
-                <div className="menu">
+                <div>
                   <h3>thursday</h3>
                   <h4>5pm - 6pm</h4>
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div>
               <div>
-                <div className="menu">
+                <div>
                   <h3>friday</h3>
                   <h4>6am - 7am</h4>
                 </div>
               </div>
               <div>
-                <div className="menu">
+                <div>
                   <h3>saturday</h3>
                   <h4>7pm - 8pm</h4>
                 </div>

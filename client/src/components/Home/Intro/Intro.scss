@@ -1,13 +1,36 @@
 .intro-container {
-  color: rgba(255, 255, 255, 0.666);
-  padding: 2rem;
+  @media screen and (max-width: 1000px) {
+    & {
+      flex-direction: column;
 
-  &::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    right: 0;
-    z-index: -5;
+      > div:nth-child(2) {
+        padding-top: 1rem;
+        margin-left: 0;
+      }
+    }
+  }
+
+  > div:nth-child(1) {
+    color: rgba(255, 255, 255, 0.666);
+    padding: 0;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      right: 0;
+      z-index: -5;
+    }
+
+    @media screen and (max-width: 500px) {
+      & {
+        padding: 0;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }

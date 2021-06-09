@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
-import NavBar from "../../Shared/NavBar/NavBar";
 
-const url = "../../../sounds/back-sound.mp3";
+const url = "../../../media/sounds/back-sound.mp3";
 
 const useAudio = () => {
   const [audio] = useState(new Audio(url));

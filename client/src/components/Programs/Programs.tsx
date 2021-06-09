@@ -27,7 +27,7 @@ const Programs: React.FC = () => {
                 />
               </Link>
             </div>
-            <div className="inner-container-two">
+            <div className="inner-container-one">
               <Link to="/programDetails">
                 <img
                   src="https://i.ibb.co/Rz1tpft/baylee-gramling-5m4-Z14-SDL80-unsplash.jpg"
@@ -35,7 +35,7 @@ const Programs: React.FC = () => {
                 />
               </Link>
             </div>
-            <div className="inner-container-three">
+            <div className="inner-container-one">
               <Link to="/programDetails">
                 <img
                   src="https://i.ibb.co/3pp2ddt/humphrey-muleba-LOA2m-Tj1vhc-unsplash.jpg"
@@ -50,7 +50,7 @@ const Programs: React.FC = () => {
       <section className="container">
         <SkeletonComponent>
           <div className="split">
-            <div className="inner-container-four">
+            <div className="inner-container-two">
               <Link to="/programDetails">
                 <img
                   src="https://i.ibb.co/cc5STkx/alora-griffiths-Tuzrz-Arccvc-unsplash.jpg"
@@ -58,7 +58,7 @@ const Programs: React.FC = () => {
                 />
               </Link>
             </div>
-            <div className="inner-container-five">
+            <div className="inner-container-two">
               <Link to="/programDetails">
                 <img
                   src="https://i.ibb.co/N73w5Nb/john-fornander-FIu48iuo-4g-unsplash.jpg"
@@ -66,7 +66,7 @@ const Programs: React.FC = () => {
                 />
               </Link>
             </div>
-            <div className="inner-container-six">
+            <div className="inner-container-two">
               <Link to="/programDetails">
                 <img src="https://i.ibb.co/9n48GdY/card-One-Bg.jpg" alt="" />
               </Link>

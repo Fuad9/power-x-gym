@@ -176,9 +176,9 @@ const NavBar: React.FC = () => {
                       style={styles.textStyle}
                       to="/profile"
                     >
-                      <Typography variant="h6" className={classes.title}>
+                      <MenuItem onClick={() => setOpen(false)}>
                         Profile
-                      </Typography>
+                      </MenuItem>
                     </NavLink>
                     <Button onClick={signOut}>Sign Out</Button>
                   </>
@@ -188,12 +188,12 @@ const NavBar: React.FC = () => {
                     style={styles.textStyle}
                     to="/login"
                   >
-                    <Typography variant="h6" className={classes.title}>
-                      Sign In
-                    </Typography>
+                    <MenuItem onClick={() => setOpen(false)}>Sign In</MenuItem>
                   </NavLink>
                 )}
-                <BackgroundSound />
+                <MenuItem>
+                  <BackgroundSound />
+                </MenuItem>
               </div>
             </Drawer>
           </div>

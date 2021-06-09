@@ -28,6 +28,7 @@
     "react-dom": "^17.0.0",
     "react-hook-form": "^6.9.5",
     "react-loading-skeleton": "^2.2.0",
+    "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
     "react-stripe-elements": "^6.1.2",

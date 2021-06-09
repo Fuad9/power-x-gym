@@ -2,7 +2,7 @@ import React from "react";
 
 import useSound from "use-sound";
 
-import clickSound from "../../../sounds/click-sound.wav";
+import clickSound from "../../../media/sounds/click-sound.wav";
 
 interface Props {
   children: any;

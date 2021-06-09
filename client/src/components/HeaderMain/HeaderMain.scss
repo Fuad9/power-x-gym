@@ -1,12 +1,18 @@
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("https://i.ibb.co/nRhbJRQ/header-Main.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.ibb.co/nRhbJRQ/header-Main.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 
-    .children {
-        padding: 5rem 5rem 7rem 5rem;
-        text-align: center;
+  .children {
+    padding: 5rem 5rem 7rem 5rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    span {
+      font-size: 1.5rem !important;
     }
+  }
 }
